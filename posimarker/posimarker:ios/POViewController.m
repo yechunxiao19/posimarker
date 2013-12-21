@@ -1,18 +1,18 @@
 //
-//  ViewController.m
-//  posimarker
+//  POViewController.m
+//  posimarker:ios
 //
-//  Created by yechunxiao on 12/21/13.
+//  Created by Chase Zhang on 12/21/13.
 //  Copyright (c) 2013 posi. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "POViewController.h"
 
-@interface ViewController ()
+@interface POViewController ()
 
 @end
 
-@implementation ViewController
+@implementation POViewController
 
 - (void)viewDidLoad
 {

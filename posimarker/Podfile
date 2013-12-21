@@ -1,1 +1,2 @@
-pod 'Simple-KML'
+pod 'RaptureXML', '~> 1.0.1'
+pod 'zipzap', '~> 5.0'
