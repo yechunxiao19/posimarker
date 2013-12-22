@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KMLElement.h"
+
 @class RXMLElement;
 
 @interface KMLContainer : KMLElement
@@ -16,11 +17,9 @@
 @property NSString *description;
 
 @property NSArray *elements;
+@property(nonatomic) NSDictionary *styles;
 
-@property(nonatomic, weak) KMLContainer *upperContainer;
-
-- (instancetype)initWithRootXMLElement:(RXMLElement *)rootXMLElement;
-
++ (id)containerWithXMLElement:(RXMLElement *)element;
 @end
 
 @interface KMLFolder : KMLContainer
@@ -28,7 +27,5 @@
 @end
 
 @interface KMLDocument : KMLContainer
-
-@property NSDictionary *styles;
 
 @end

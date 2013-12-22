@@ -67,6 +67,7 @@
 		52652AC61865B31000C55F7A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		52652AC91865C26300C55F7A /* KMLContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMLContainer.h; path = posimarker/KMLContainer.h; sourceTree = "<group>"; };
 		52652ACA1865C26300C55F7A /* KMLContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMLContainer.m; path = posimarker/KMLContainer.m; sourceTree = "<group>"; };
+		52CF743F186709B4000AF68E /* KMLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMLMacros.h; sourceTree = "<group>"; };
 		AF215E75693B498EB0177B04 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BC41D6721865658D001FAC75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC41D6741865658D001FAC75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,6 +171,7 @@
 				52652AC01865AEE600C55F7A /* KMLElement.m */,
 				52652AC91865C26300C55F7A /* KMLContainer.h */,
 				52652ACA1865C26300C55F7A /* KMLContainer.m */,
+				52CF743F186709B4000AF68E /* KMLMacros.h */,
 			);
 			name = KMLParser;
 			sourceTree = "<group>";

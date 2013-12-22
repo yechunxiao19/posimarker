@@ -10,13 +10,15 @@
 #import <CoreLocation/CoreLocation.h>
 
 #pragma mark - KMLELement
+@class RXMLElement;
 @interface KMLElement : NSObject
 
-@property(nonatomic, weak) KMLElement *upperElement;
-@property(nonatomic, readonly) NSString *indentifier;
+@property(nonatomic, weak) KMLElement *parentElement;
+@property(nonatomic, readonly) NSString *identifier;
 
 - (instancetype)initWithIndentifier:(NSString *)identifier;
-
+- (instancetype)initWithXMLElement:(RXMLElement *)element;
+- (void)parseXMLElement:(RXMLElement *)element;
 
 @end
 
@@ -33,11 +35,13 @@
 
 @end
 
+
 #pragma mark KMLGeometry
 
 @interface KMLGeometry : KMLElement
 
 @property(nonatomic) NSArray *coordinates;
++ (id)geometryWithXMLElement:(RXMLElement *)element;
 
 @end
 
@@ -45,11 +49,23 @@
 
 @interface KMLMultiGeometry : KMLGeometry
 
-@property(nonatomic) NSArray *subGeometry;
+@property(nonatomic) NSArray *subGeometries;
 
 @end
 
+#pragma mark KMLPlacemark
 
+@interface KMLPlacemark : KMLElement
+
+@property(nonatomic) NSString *name;
+@property(nonatomic) NSString *description;
+@property(nonatomic) NSString *styleURL;
+@property(nonatomic) KMLStyle *style;
+@property(nonatomic) KMLGeometry *geometry;
+
+@end
+
+#pragma mark -
 #pragma mark KMLPoint
 
 @interface KMLPoint : KMLGeometry
@@ -64,36 +80,28 @@
 
 @end
 
-#pragma mark KMLPolygon
-
-@interface KMLPolygon : KMLGeometry
-
-@property(nonatomic) KMLLinearRing *outerBoundary;
-@property(nonatomic) NSArray *innerBoundaryArray;
-
-@end
-
 #pragma mark KMLLineString
 
 @interface KMLLineString : KMLGeometry
 
 @end
 
-#pragma mark KMLPlacemark
+#pragma mark KMLPolygon
 
-@interface KMLPlacemark : KMLGeometry
+@interface KMLPolygon : KMLGeometry
 
-@property(nonatomic) NSString *name;
-@property(nonatomic) NSString *description;
-@property(nonatomic) NSString *styleURL;
-@property(nonatomic) KMLGeometry *geometry;
+@property(nonatomic) KMLLinearRing *outerBoundary;
+@property(nonatomic) NSArray *innerBoundariesArray;
 
 @end
+
 
 #pragma mark -
 #pragma mark GXTrack
 
 @interface GXTrack : KMLGeometry
+
+- (void)iterateTrackWithBlock:(void (^)(CLLocation *l))block;
 
 @end
 
