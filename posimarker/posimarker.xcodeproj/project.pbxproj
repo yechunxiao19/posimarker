@@ -11,8 +11,8 @@
 		5236AC7018659F89008DA096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC6E18659F89008DA096 /* InfoPlist.strings */; };
 		5236AC7218659F89008DA096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236AC7118659F89008DA096 /* main.m */; };
 		5236AC7618659F89008DA096 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC7418659F89008DA096 /* Credits.rtf */; };
-		5236AC7918659F89008DA096 /* PODocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236AC7818659F89008DA096 /* PODocument.m */; };
-		5236AC7C18659F89008DA096 /* PODocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC7A18659F89008DA096 /* PODocument.xib */; };
+		5236AC7918659F89008DA096 /* POKMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236AC7818659F89008DA096 /* POKMLDocument.m */; };
+		5236AC7C18659F89008DA096 /* POKMLDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC7A18659F89008DA096 /* POKMLDocument.xib */; };
 		5236AC7F18659F89008DA096 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC7D18659F89008DA096 /* MainMenu.xib */; };
 		5236AC8118659F89008DA096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC8018659F89008DA096 /* Images.xcassets */; };
 		5236ACD21865A05F008DA096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6721865658D001FAC75 /* Foundation.framework */; };
@@ -24,6 +24,7 @@
 		5236ACE31865A05F008DA096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5236ACE11865A05F008DA096 /* Main.storyboard */; };
 		5236ACE61865A05F008DA096 /* POViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236ACE51865A05F008DA096 /* POViewController.m */; };
 		5236ACE81865A05F008DA096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5236ACE71865A05F008DA096 /* Images.xcassets */; };
+		52624F1B186860B1001F1E29 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52624F1A186860B1001F1E29 /* MapKit.framework */; };
 		52652AC11865AEE600C55F7A /* KMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 52652AC01865AEE600C55F7A /* KMLElement.m */; };
 		52652AC21865AEE600C55F7A /* KMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 52652AC01865AEE600C55F7A /* KMLElement.m */; };
 		52652AC51865B2FE00C55F7A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52652AC41865B2FE00C55F7A /* Cocoa.framework */; };
@@ -45,9 +46,9 @@
 		5236AC7118659F89008DA096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5236AC7318659F89008DA096 /* posimarker:mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "posimarker:mac-Prefix.pch"; sourceTree = "<group>"; };
 		5236AC7518659F89008DA096 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		5236AC7718659F89008DA096 /* PODocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PODocument.h; sourceTree = "<group>"; };
-		5236AC7818659F89008DA096 /* PODocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PODocument.m; sourceTree = "<group>"; };
-		5236AC7B18659F89008DA096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PODocument.xib; sourceTree = "<group>"; };
+		5236AC7718659F89008DA096 /* POKMLDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POKMLDocument.h; sourceTree = "<group>"; };
+		5236AC7818659F89008DA096 /* POKMLDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POKMLDocument.m; sourceTree = "<group>"; };
+		5236AC7B18659F89008DA096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/POKMLDocument.xib; sourceTree = "<group>"; };
 		5236AC7E18659F89008DA096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5236AC8018659F89008DA096 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5236ACD11865A05F008DA096 /* posimarker:ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "posimarker:ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +62,8 @@
 		5236ACE41865A05F008DA096 /* POViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POViewController.h; sourceTree = "<group>"; };
 		5236ACE51865A05F008DA096 /* POViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POViewController.m; sourceTree = "<group>"; };
 		5236ACE71865A05F008DA096 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52624F1918684A00001F1E29 /* KMLd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMLd.h; sourceTree = "<group>"; };
+		52624F1A186860B1001F1E29 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		52652ABF1865AEE600C55F7A /* KMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMLElement.h; path = posimarker/KMLElement.h; sourceTree = "<group>"; };
 		52652AC01865AEE600C55F7A /* KMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMLElement.m; path = posimarker/KMLElement.m; sourceTree = "<group>"; };
 		52652AC41865B2FE00C55F7A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -84,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52624F1B186860B1001F1E29 /* MapKit.framework in Frameworks */,
 				52652AC71865B31000C55F7A /* CoreLocation.framework in Frameworks */,
 				52652AC51865B2FE00C55F7A /* Cocoa.framework in Frameworks */,
 				1D676AAE9B2642DA8410B9D3 /* libPods.a in Frameworks */,
@@ -117,9 +121,9 @@
 		5236AC6B18659F89008DA096 /* posimarker:mac */ = {
 			isa = PBXGroup;
 			children = (
-				5236AC7718659F89008DA096 /* PODocument.h */,
-				5236AC7818659F89008DA096 /* PODocument.m */,
-				5236AC7A18659F89008DA096 /* PODocument.xib */,
+				5236AC7718659F89008DA096 /* POKMLDocument.h */,
+				5236AC7818659F89008DA096 /* POKMLDocument.m */,
+				5236AC7A18659F89008DA096 /* POKMLDocument.xib */,
 				5236AC7D18659F89008DA096 /* MainMenu.xib */,
 				5236AC8018659F89008DA096 /* Images.xcassets */,
 				5236AC6C18659F89008DA096 /* Supporting Files */,
@@ -172,6 +176,7 @@
 				52652AC91865C26300C55F7A /* KMLContainer.h */,
 				52652ACA1865C26300C55F7A /* KMLContainer.m */,
 				52CF743F186709B4000AF68E /* KMLMacros.h */,
+				52624F1918684A00001F1E29 /* KMLd.h */,
 			);
 			name = KMLParser;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 		BC41D6711865658D001FAC75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52624F1A186860B1001F1E29 /* MapKit.framework */,
 				52652AC61865B31000C55F7A /* CoreLocation.framework */,
 				52652AC41865B2FE00C55F7A /* Cocoa.framework */,
 				BC41ED5E18657C82001FAC75 /* libxml2.dylib */,
@@ -264,6 +270,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = posi;
+				TargetAttributes = {
+					5236AC6318659F89008DA096 = {
+						DevelopmentTeam = MC98392EJC;
+					};
+				};
 			};
 			buildConfigurationList = BC41D66A1865658C001FAC75 /* Build configuration list for PBXProject "posimarker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -292,7 +303,7 @@
 				5236AC7018659F89008DA096 /* InfoPlist.strings in Resources */,
 				5236AC8118659F89008DA096 /* Images.xcassets in Resources */,
 				5236AC7618659F89008DA096 /* Credits.rtf in Resources */,
-				5236AC7C18659F89008DA096 /* PODocument.xib in Resources */,
+				5236AC7C18659F89008DA096 /* POKMLDocument.xib in Resources */,
 				5236AC7F18659F89008DA096 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5236AC7218659F89008DA096 /* main.m in Sources */,
-				5236AC7918659F89008DA096 /* PODocument.m in Sources */,
+				5236AC7918659F89008DA096 /* POKMLDocument.m in Sources */,
 				52652AC11865AEE600C55F7A /* KMLElement.m in Sources */,
 				52652ACB1865C26300C55F7A /* KMLContainer.m in Sources */,
 			);
@@ -385,12 +396,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		5236AC7A18659F89008DA096 /* PODocument.xib */ = {
+		5236AC7A18659F89008DA096 /* POKMLDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5236AC7B18659F89008DA096 /* Base */,
 			);
-			name = PODocument.xib;
+			name = POKMLDocument.xib;
 			sourceTree = "<group>";
 		};
 		5236AC7D18659F89008DA096 /* MainMenu.xib */ = {
@@ -426,6 +437,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +454,7 @@
 				INFOPLIST_FILE = "posimarker:mac/posimarker:mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,6 +466,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -464,6 +480,7 @@
 				INFOPLIST_FILE = "posimarker:mac/posimarker:mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};

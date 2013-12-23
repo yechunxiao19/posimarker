@@ -28,4 +28,7 @@
 
 @interface KMLDocument : KMLContainer
 
++ (instancetype)documentWithData:(NSData *)data;
++ (instancetype)documentWithContentsOfURL:(NSURL *)url;
+
 @end

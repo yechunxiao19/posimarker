@@ -20,7 +20,13 @@
   
   [XMLElement iterate:@"*" usingBlock:^(RXMLElement * element) {
     NSString *elementName = element.tag;
-    if (ELTYPE(Style)) {
+    if (ELTYPE(name)) {
+      _name = element.text;
+    }
+    else if (ELTYPE(description)) {
+      _description = element.text;
+    }
+    else if (ELTYPE(Style)) {
       KMLStyle *style = [[KMLStyle alloc]initWithXMLElement:element];
       style.parentElement = self;
       if(style.identifier)[styles setObject:style forKey:style.identifier];
@@ -68,6 +74,26 @@
     if (ELCLASS(kmlElement, KMLStyle))
       [styles setObject:kmlElement forKey:kmlElement.identifier];
   }
+}
+
++ (instancetype)documentWithData:(NSData *)data
+{
+  RXMLElement * xmlElement = [RXMLElement elementFromXMLData:data];
+  if (xmlElement) {
+    KMLDocument *document = [[KMLDocument alloc] initWithXMLElement:xmlElement];
+    if (document && [document.elements count]==1) {
+      KMLElement *rootElement = [document.elements objectAtIndex:0];
+      if (ELCLASS(rootElement, KMLDocument))
+        return (KMLDocument *)rootElement;
+    }
+    return document;
+  }
+  return nil; 
+}
+
++ (instancetype)documentWithContentsOfURL:(NSURL *)url
+{
+  return [KMLDocument documentWithData:[NSData dataWithContentsOfURL:url]];
 }
 
 @end

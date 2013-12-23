@@ -38,9 +38,16 @@
 
 #pragma mark KMLGeometry
 
+@class MKShape;
+@class MKPointAnnotation;
 @interface KMLGeometry : KMLElement
 
-@property(nonatomic) NSArray *coordinates;
+@property(nonatomic) CLLocationCoordinate2D *coordinates;
+@property(nonatomic) NSUInteger coordiantesCount;
+
+@property(nonatomic,readonly) MKShape *shape;
+@property(nonatomic,readonly) MKPointAnnotation *pointAnnotation;
+
 + (id)geometryWithXMLElement:(RXMLElement *)element;
 
 @end
@@ -51,6 +58,8 @@
 
 @property(nonatomic) NSArray *subGeometries;
 
+@property(nonatomic, readonly) NSArray * shapes;
+@property(nonatomic, readonly) NSArray * pointAnnotations;
 @end
 
 #pragma mark KMLPlacemark
@@ -63,6 +72,9 @@
 @property(nonatomic) KMLStyle *style;
 @property(nonatomic) KMLGeometry *geometry;
 
+@property(nonatomic, readonly) NSArray * shapes;
+@property(nonatomic, readonly) NSArray * overlays;
+@property(nonatomic, readonly) NSArray * pointAnnotations;
 @end
 
 #pragma mark -

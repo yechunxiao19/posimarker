@@ -8,6 +8,8 @@
 
 #import "KMLElement.h"
 #import "KMLMacros.h"
+
+#import <MapKit/MapKit.h>
 #import <ISO8601DateFormatter.h>
 #import <RXMLElement.h>
 
@@ -60,9 +62,9 @@
 
 @implementation KMLStyle
 
-- (void)parseXMLElement:(RXMLElement *)element
+- (void)parseXMLElement:(RXMLElement *)XMLElement
 {
-  [element iterate:@"*" usingBlock:^(RXMLElement * ele) {
+  [XMLElement iterate:@"*" usingBlock:^(RXMLElement * ele) {
     NSString *elementName = ele.tag;
     if (ELTYPE(LineStyle)) {
       RXMLElement *colorElement = [ele child:@"color"];
@@ -87,43 +89,59 @@
 
 @implementation KMLGeometry
 
+- (void)dealloc
+{
+  if (_coordinates) {
+    free(_coordinates);
+  }
+}
+
 - (void)parseXMLElement:(RXMLElement *)element
 {
   RXMLElement *coordinatesElement = [element child:@"coordinates"];
   if (coordinatesElement) {
-    _coordinates = [KMLGeometry coordinatesWithString:coordinatesElement.text];
+    [KMLGeometry coordinatesWithString:coordinatesElement.text
+                             coordsOut:&_coordinates
+                                 count:&_coordiantesCount];
   }
 }
 
-+ (NSArray *)coordinatesWithString:(NSString *)coordinatesString
+
++ (void)coordinatesWithString:(NSString *)coordinatesString coordsOut:(CLLocationCoordinate2D **)coordsOut count:(NSUInteger *)count
 {
-  NSMutableArray *coordinates = [[NSMutableArray alloc] init];
-  NSArray *coordiantesComponents = [coordinatesString componentsSeparatedByString:[NSCharacterSet newlineCharacterSet]];
-  NSCharacterSet *skipCharacters = [NSCharacterSet characterSetWithCharactersInString:@" ,"];
   
-  CGFloat longtitude;
-  CGFloat latitude;
-  CGFloat altitude;
+  NSUInteger read = 0, space = 10;
+  CLLocationCoordinate2D *coords = malloc(sizeof(CLLocationCoordinate2D) * space);
+  
+  NSArray *coordiantesComponents = [coordinatesString componentsSeparatedByCharactersInSet:
+                                    [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+  
   
   for (NSString *component in coordiantesComponents) {
-    NSScanner *scanner = [[NSScanner alloc] init];
-    scanner.charactersToBeSkipped = skipCharacters;
+    
+    if (read == space) {
+      space += 20;
+      coords = realloc(coords, sizeof(CLLocationCoordinate2D) * space);
+    }
+    
+    double longtitude;
+    double latitude;
+    NSScanner *scanner = [NSScanner scannerWithString:component];
+    scanner.charactersToBeSkipped = [NSCharacterSet characterSetWithCharactersInString:@","];
     if ([scanner scanDouble:&longtitude]) {
       if ([scanner scanDouble:&latitude]) {
-        if (![scanner scanDouble:&altitude]) altitude = 0.0;
-        CLLocation *location = [[CLLocation alloc] initWithCoordinate:CLLocationCoordinate2DMake(latitude, longtitude)
-                                                             altitude:altitude
-                                                   horizontalAccuracy:0
-                                                     verticalAccuracy:0
-                                                            timestamp:nil];
-        [coordinates addObject:location];
+        CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(latitude, longtitude);
+        
+        if (CLLocationCoordinate2DIsValid(coordinate))
+          coords[read++] = coordinate;
       }
     }
   }
-  return coordinates;
+  *coordsOut = coords;
+  *count = read;
 }
 
-+ (CLLocation *)coordinateWithString:(NSString *)string timeStamp:(NSDate *)date
++ (CLLocation *)locationWithString:(NSString *)string timeStamp:(NSDate *)date
 {
   
   CGFloat longtitude;
@@ -159,10 +177,10 @@
     return [[KMLLinearRing alloc] initWithXMLElement:element];
   }
   else if (ELTYPE(Polygon)) {
-    return [[KMLMultiGeometry alloc] initWithXMLElement:element];
+    return [[KMLPolygon alloc] initWithXMLElement:element];
   }
   else if (ELTYPE(LineString)) {
-    return [[KMLLinearRing alloc] initWithXMLElement:element];
+    return [[KMLLineString alloc] initWithXMLElement:element];
   }
   else if (ELTYPE(multiGeometry)) {
     return [[KMLMultiGeometry alloc] initWithXMLElement:element];
@@ -172,6 +190,22 @@
   }
   else if (ELTYPE(gx:multiTrack)) {
     return [[GXMultiTrack alloc] initWithXMLElement:element];
+  }
+  return nil;
+}
+
+- (MKShape *)shape
+{
+  return [self pointAnnotation];
+}
+
+- (MKPointAnnotation *)pointAnnotation
+{
+  if (_coordiantesCount) {
+    CLLocationCoordinate2D coordinate = _coordinates[0];
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    annotation.coordinate = coordinate;
+    return annotation;
   }
   return nil;
 }
@@ -190,6 +224,52 @@
     if (geometry) [_geometries addObject:geometry];
   }];
   _subGeometries = _geometries;
+}
+
+- (NSArray *)shapes
+{
+  NSMutableArray *shapes = nil;
+  if ([_subGeometries count]) {
+    shapes = [[NSMutableArray alloc] init];
+    for (KMLGeometry *geometry in _subGeometries) {
+      if (ELCLASS(geometry, KMLMultiGeometry)) {
+        [shapes addObjectsFromArray:[(KMLMultiGeometry *)geometry shapes]];
+      }
+      else {
+        MKShape *shape = geometry.shape;
+        if (shape)[shapes addObject:shape];
+      }
+    }
+  }
+  return shapes;
+}
+
+- (NSArray *)pointAnnotations
+{
+  NSMutableArray *points = nil;
+  if ([_subGeometries count]) {
+    points = [[NSMutableArray alloc] init];
+    for (KMLGeometry *geometry in _subGeometries) {
+      if (ELCLASS(geometry, KMLMultiGeometry)) {
+        [points addObjectsFromArray:[(KMLMultiGeometry *)geometry pointAnnotations]];
+      }
+      else {
+        MKPointAnnotation *point = geometry.pointAnnotation;
+        if (point) [points addObject:point];
+      }
+    }
+  }
+  return points;
+}
+
+- (MKShape *)shape
+{
+  return nil;
+}
+
+- (MKPointAnnotation *)pointAnnotation
+{
+  return nil;
 }
 
 @end
@@ -220,6 +300,45 @@
     }
   }];
 }
+
+- (NSArray *)shapes
+{
+  if (ELCLASS(_geometry, KMLMultiGeometry)) {
+     return [(KMLMultiGeometry *)_geometry shapes];
+  }
+  else {
+    MKShape *shape = _geometry.shape;
+    shape.title = _name;
+    if (shape) return @[shape];
+  }
+  return nil;
+}
+
+- (NSArray *)overlays
+{
+  NSMutableArray *overlays = [[NSMutableArray alloc] init];
+  NSArray *shapes = self.shapes;
+  for (id shape in shapes) {
+    if ([shape conformsToProtocol:@protocol(MKOverlay)]) {
+      [overlays addObject:shape];
+    }
+  }
+  return overlays;
+}
+
+- (NSArray *)pointAnnotations
+{
+  if (ELCLASS(_geometry, KMLMultiGeometry)) {
+    return [(KMLMultiGeometry *)_geometry pointAnnotations];
+  }
+  else {
+    MKPointAnnotation *point = _geometry.pointAnnotation;
+    point.title = _name;
+    if(point) return @[point];
+  }
+  return nil;
+}
+
 @end
 
 #pragma mark -
@@ -230,8 +349,9 @@
 - (void)parseXMLElement:(RXMLElement *)element
 {
   [super parseXMLElement:element];
-  if ([self.coordinates count]) {
-    _location = [self.coordinates objectAtIndex:0];
+  if (self.coordiantesCount) {
+    CLLocationCoordinate2D coordinate = self.coordinates[0];
+    self.location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
   }
 }
 @end
@@ -240,12 +360,22 @@
 
 @implementation KMLLinearRing
 
+- (MKShape *)shape
+{
+  return [MKPolygon polygonWithCoordinates:self.coordinates count:self.coordiantesCount];
+}
+
 @end
 
 
 #pragma mark KMLLineString
 
 @implementation KMLLineString
+
+- (MKShape *)shape
+{
+  return [MKPolyline polylineWithCoordinates:self.coordinates count:self.coordiantesCount];
+}
 
 @end
 
@@ -260,16 +390,33 @@
   [xmlElement iterate:@"*" usingBlock:^(RXMLElement *element) {
     NSString *elementName = element.tag;
     if (ELTYPE(outerBoundaryIs)) {
-      _outerBoundary = [[KMLLinearRing alloc] initWithXMLElement:element];
+      _outerBoundary = [[KMLLinearRing alloc] initWithXMLElement:[element child:@"LinearRing"]];
     }
     else if (ELTYPE(innerBoundaryIs)) {
-      KMLLinearRing *ring = [[KMLLinearRing alloc] initWithXMLElement:element];
+      KMLLinearRing *ring = [[KMLLinearRing alloc] initWithXMLElement:[element child:@"LinearRing"]];
       if (ring) [innerBoundries addObject:ring];
     }
   }];
   if ([innerBoundries count]) {
     _innerBoundariesArray = innerBoundries;
   }
+}
+
+- (MKShape *)shape
+{
+  NSMutableArray *innerPolygons = nil;
+  if (_innerBoundariesArray) {
+    innerPolygons = [[NSMutableArray alloc] init];
+    for (KMLLinearRing *ring in _innerBoundariesArray) {
+      [innerPolygons addObject:ring.shape];
+    }
+  }
+  if (_outerBoundary) {
+    return [MKPolygon polygonWithCoordinates:_outerBoundary.coordinates
+                                       count:_outerBoundary.coordiantesCount
+                            interiorPolygons:innerPolygons];
+  }
+  return nil;
 }
 
 @end
@@ -303,8 +450,7 @@
     }
     else if (ELTYPE(gx:coord)) {
       if (date) {
-        CLLocation *location = [KMLGeometry coordinateWithString:element.text
-                                timeStamp:date];
+        CLLocation *location = [KMLGeometry locationWithString:element.text timeStamp:date];
         if (location) block(location);
       }
     }
