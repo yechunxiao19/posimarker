@@ -7,195 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC41D6731865658D001FAC75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6721865658D001FAC75 /* Foundation.framework */; };
-		BC41D6751865658D001FAC75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6741865658D001FAC75 /* CoreGraphics.framework */; };
-		BC41D6771865658D001FAC75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6761865658D001FAC75 /* UIKit.framework */; };
-		BC41D67D1865658D001FAC75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC41D67B1865658D001FAC75 /* InfoPlist.strings */; };
-		BC41D67F1865658D001FAC75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41D67E1865658D001FAC75 /* main.m */; };
-		BC41D6831865658D001FAC75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41D6821865658D001FAC75 /* AppDelegate.m */; };
-		BC41D6861865658D001FAC75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC41D6841865658D001FAC75 /* Main.storyboard */; };
-		BC41D6891865658D001FAC75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41D6881865658D001FAC75 /* ViewController.m */; };
-		BC41D68B1865658D001FAC75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC41D68A1865658D001FAC75 /* Images.xcassets */; };
-		BC41D6921865658D001FAC75 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6911865658D001FAC75 /* XCTest.framework */; };
-		BC41D6931865658D001FAC75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6721865658D001FAC75 /* Foundation.framework */; };
-		BC41D6941865658D001FAC75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6761865658D001FAC75 /* UIKit.framework */; };
-		BC41D69C1865658D001FAC75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC41D69A1865658D001FAC75 /* InfoPlist.strings */; };
-		BC41D69E1865658D001FAC75 /* posimarkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41D69D1865658D001FAC75 /* posimarkerTests.m */; };
-		BC41ECF71865787F001FAC75 /* SimpleKML.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECC81865787F001FAC75 /* SimpleKML.m */; };
-		BC41ECF81865787F001FAC75 /* SimpleKML_UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECCA1865787F001FAC75 /* SimpleKML_UIImage.m */; };
-		BC41ECF91865787F001FAC75 /* SimpleKMLBalloonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECCC1865787F001FAC75 /* SimpleKMLBalloonStyle.m */; };
-		BC41ECFA1865787F001FAC75 /* SimpleKMLColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECCE1865787F001FAC75 /* SimpleKMLColorStyle.m */; };
-		BC41ECFB1865787F001FAC75 /* SimpleKMLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECD01865787F001FAC75 /* SimpleKMLContainer.m */; };
-		BC41ECFC1865787F001FAC75 /* SimpleKMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECD21865787F001FAC75 /* SimpleKMLDocument.m */; };
-		BC41ECFD1865787F001FAC75 /* SimpleKMLFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECD41865787F001FAC75 /* SimpleKMLFeature.m */; };
-		BC41ECFE1865787F001FAC75 /* SimpleKMLFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECD61865787F001FAC75 /* SimpleKMLFolder.m */; };
-		BC41ECFF1865787F001FAC75 /* SimpleKMLGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECD81865787F001FAC75 /* SimpleKMLGeometry.m */; };
-		BC41ED001865787F001FAC75 /* SimpleKMLGroundOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECDA1865787F001FAC75 /* SimpleKMLGroundOverlay.m */; };
-		BC41ED011865787F001FAC75 /* SimpleKMLIconStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECDC1865787F001FAC75 /* SimpleKMLIconStyle.m */; };
-		BC41ED021865787F001FAC75 /* SimpleKMLLinearRing.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECDE1865787F001FAC75 /* SimpleKMLLinearRing.m */; };
-		BC41ED031865787F001FAC75 /* SimpleKMLLineString.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECE01865787F001FAC75 /* SimpleKMLLineString.m */; };
-		BC41ED041865787F001FAC75 /* SimpleKMLLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECE21865787F001FAC75 /* SimpleKMLLineStyle.m */; };
-		BC41ED051865787F001FAC75 /* SimpleKMLMultiGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECE41865787F001FAC75 /* SimpleKMLMultiGeometry.m */; };
-		BC41ED061865787F001FAC75 /* SimpleKMLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECE61865787F001FAC75 /* SimpleKMLObject.m */; };
-		BC41ED071865787F001FAC75 /* SimpleKMLOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECE81865787F001FAC75 /* SimpleKMLOverlay.m */; };
-		BC41ED081865787F001FAC75 /* SimpleKMLPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECEA1865787F001FAC75 /* SimpleKMLPlacemark.m */; };
-		BC41ED091865787F001FAC75 /* SimpleKMLPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECEC1865787F001FAC75 /* SimpleKMLPoint.m */; };
-		BC41ED0A1865787F001FAC75 /* SimpleKMLPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECEE1865787F001FAC75 /* SimpleKMLPolygon.m */; };
-		BC41ED0B1865787F001FAC75 /* SimpleKMLPolyStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECF01865787F001FAC75 /* SimpleKMLPolyStyle.m */; };
-		BC41ED0C1865787F001FAC75 /* SimpleKMLStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECF21865787F001FAC75 /* SimpleKMLStyle.m */; };
-		BC41ED0D1865787F001FAC75 /* SimpleKMLStyleSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECF41865787F001FAC75 /* SimpleKMLStyleSelector.m */; };
-		BC41ED0E1865787F001FAC75 /* SimpleKMLSubStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ECF61865787F001FAC75 /* SimpleKMLSubStyle.m */; };
-		BC41ED19186578C0001FAC75 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED11186578C0001FAC75 /* ioapi.c */; };
-		BC41ED1A186578C0001FAC75 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED13186578C0001FAC75 /* mztools.c */; };
-		BC41ED1B186578C0001FAC75 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED15186578C0001FAC75 /* unzip.c */; };
-		BC41ED1C186578C0001FAC75 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED17186578C0001FAC75 /* zip.c */; };
-		BC41ED28186578C9001FAC75 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED1F186578C8001FAC75 /* FileInZipInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC41ED29186578C9001FAC75 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED21186578C8001FAC75 /* ZipException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC41ED2A186578C9001FAC75 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED23186578C9001FAC75 /* ZipFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC41ED2B186578C9001FAC75 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED25186578C9001FAC75 /* ZipReadStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC41ED2C186578C9001FAC75 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED27186578C9001FAC75 /* ZipWriteStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC41ED4B18657929001FAC75 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3018657929001FAC75 /* CXMLDocument_CreationExtensions.m */; };
-		BC41ED4C18657929001FAC75 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3218657929001FAC75 /* CXMLNode_CreationExtensions.m */; };
-		BC41ED4D18657929001FAC75 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3418657929001FAC75 /* CXHTMLDocument.m */; };
-		BC41ED4E18657929001FAC75 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3618657929001FAC75 /* CXMLDocument_PrivateExtensions.m */; };
-		BC41ED4F18657929001FAC75 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3818657929001FAC75 /* CXMLDocument.m */; };
-		BC41ED5018657929001FAC75 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3A18657929001FAC75 /* CXMLElement_CreationExtensions.m */; };
-		BC41ED5118657929001FAC75 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3C18657929001FAC75 /* CXMLElement_ElementTreeExtensions.m */; };
-		BC41ED5218657929001FAC75 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED3E18657929001FAC75 /* CXMLElement.m */; };
-		BC41ED5318657929001FAC75 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED4018657929001FAC75 /* CXMLNamespaceNode.m */; };
-		BC41ED5418657929001FAC75 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED4218657929001FAC75 /* CXMLNode_PrivateExtensions.m */; };
-		BC41ED5518657929001FAC75 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED4418657929001FAC75 /* CXMLNode_XPathExtensions.m */; };
-		BC41ED5618657929001FAC75 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED4618657929001FAC75 /* CXMLNode.m */; };
-		BC41ED5718657929001FAC75 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41ED4918657929001FAC75 /* CTidy.m */; };
-		BC41ED5918657A22001FAC75 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41ED5818657A22001FAC75 /* libz.dylib */; };
-		BC41ED5B18657A2B001FAC75 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41ED5A18657A2B001FAC75 /* MapKit.framework */; };
-		BC41ED5D18657A35001FAC75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41ED5C18657A35001FAC75 /* CoreLocation.framework */; };
-		BC41ED5F18657C83001FAC75 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41ED5E18657C82001FAC75 /* libxml2.dylib */; };
+		1D676AAE9B2642DA8410B9D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BBC58F85B942A19CDE103A /* libPods.a */; };
+		5236AC7018659F89008DA096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC6E18659F89008DA096 /* InfoPlist.strings */; };
+		5236AC7218659F89008DA096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236AC7118659F89008DA096 /* main.m */; };
+		5236AC7618659F89008DA096 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC7418659F89008DA096 /* Credits.rtf */; };
+		5236AC7918659F89008DA096 /* POKMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236AC7818659F89008DA096 /* POKMLDocument.m */; };
+		5236AC7C18659F89008DA096 /* POKMLDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC7A18659F89008DA096 /* POKMLDocument.xib */; };
+		5236AC7F18659F89008DA096 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC7D18659F89008DA096 /* MainMenu.xib */; };
+		5236AC8118659F89008DA096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5236AC8018659F89008DA096 /* Images.xcassets */; };
+		5236ACD21865A05F008DA096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6721865658D001FAC75 /* Foundation.framework */; };
+		5236ACD31865A05F008DA096 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6741865658D001FAC75 /* CoreGraphics.framework */; };
+		5236ACD41865A05F008DA096 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41D6761865658D001FAC75 /* UIKit.framework */; };
+		5236ACDA1865A05F008DA096 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5236ACD81865A05F008DA096 /* InfoPlist.strings */; };
+		5236ACDC1865A05F008DA096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236ACDB1865A05F008DA096 /* main.m */; };
+		5236ACE01865A05F008DA096 /* POAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236ACDF1865A05F008DA096 /* POAppDelegate.m */; };
+		5236ACE31865A05F008DA096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5236ACE11865A05F008DA096 /* Main.storyboard */; };
+		5236ACE61865A05F008DA096 /* POViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5236ACE51865A05F008DA096 /* POViewController.m */; };
+		5236ACE81865A05F008DA096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5236ACE71865A05F008DA096 /* Images.xcassets */; };
+		52624F1B186860B1001F1E29 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52624F1A186860B1001F1E29 /* MapKit.framework */; };
+		52652AC11865AEE600C55F7A /* KMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 52652AC01865AEE600C55F7A /* KMLElement.m */; };
+		52652AC21865AEE600C55F7A /* KMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 52652AC01865AEE600C55F7A /* KMLElement.m */; };
+		52652AC51865B2FE00C55F7A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52652AC41865B2FE00C55F7A /* Cocoa.framework */; };
+		52652AC71865B31000C55F7A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52652AC61865B31000C55F7A /* CoreLocation.framework */; };
+		52652AC81865B31900C55F7A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC41ED5C18657A35001FAC75 /* CoreLocation.framework */; };
+		52652ACB1865C26300C55F7A /* KMLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52652ACA1865C26300C55F7A /* KMLContainer.m */; };
+		52652ACC1865C26300C55F7A /* KMLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52652ACA1865C26300C55F7A /* KMLContainer.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BC41D6951865658D001FAC75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BC41D6671865658C001FAC75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC41D66E1865658D001FAC75;
-			remoteInfo = posimarker;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		BC41D66F1865658D001FAC75 /* posimarker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = posimarker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BBC58F85B942A19CDE103A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5236AC6418659F89008DA096 /* posimarker:mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "posimarker:mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5236AC6518659F89008DA096 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5236AC6818659F89008DA096 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5236AC6918659F89008DA096 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5236AC6A18659F89008DA096 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5236AC6D18659F89008DA096 /* posimarker:mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "posimarker:mac-Info.plist"; sourceTree = "<group>"; };
+		5236AC6F18659F89008DA096 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5236AC7118659F89008DA096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5236AC7318659F89008DA096 /* posimarker:mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "posimarker:mac-Prefix.pch"; sourceTree = "<group>"; };
+		5236AC7518659F89008DA096 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5236AC7718659F89008DA096 /* POKMLDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POKMLDocument.h; sourceTree = "<group>"; };
+		5236AC7818659F89008DA096 /* POKMLDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POKMLDocument.m; sourceTree = "<group>"; };
+		5236AC7B18659F89008DA096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/POKMLDocument.xib; sourceTree = "<group>"; };
+		5236AC7E18659F89008DA096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5236AC8018659F89008DA096 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5236ACD11865A05F008DA096 /* posimarker:ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "posimarker:ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5236ACD71865A05F008DA096 /* posimarker:ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "posimarker:ios-Info.plist"; sourceTree = "<group>"; };
+		5236ACD91865A05F008DA096 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5236ACDB1865A05F008DA096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5236ACDD1865A05F008DA096 /* posimarker:ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "posimarker:ios-Prefix.pch"; sourceTree = "<group>"; };
+		5236ACDE1865A05F008DA096 /* POAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POAppDelegate.h; sourceTree = "<group>"; };
+		5236ACDF1865A05F008DA096 /* POAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POAppDelegate.m; sourceTree = "<group>"; };
+		5236ACE21865A05F008DA096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5236ACE41865A05F008DA096 /* POViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POViewController.h; sourceTree = "<group>"; };
+		5236ACE51865A05F008DA096 /* POViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POViewController.m; sourceTree = "<group>"; };
+		5236ACE71865A05F008DA096 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52624F1918684A00001F1E29 /* KMLd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMLd.h; sourceTree = "<group>"; };
+		52624F1A186860B1001F1E29 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		52652ABF1865AEE600C55F7A /* KMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMLElement.h; path = posimarker/KMLElement.h; sourceTree = "<group>"; };
+		52652AC01865AEE600C55F7A /* KMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMLElement.m; path = posimarker/KMLElement.m; sourceTree = "<group>"; };
+		52652AC41865B2FE00C55F7A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		52652AC61865B31000C55F7A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		52652AC91865C26300C55F7A /* KMLContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMLContainer.h; path = posimarker/KMLContainer.h; sourceTree = "<group>"; };
+		52652ACA1865C26300C55F7A /* KMLContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMLContainer.m; path = posimarker/KMLContainer.m; sourceTree = "<group>"; };
+		52CF743F186709B4000AF68E /* KMLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMLMacros.h; sourceTree = "<group>"; };
+		AF215E75693B498EB0177B04 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BC41D6721865658D001FAC75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC41D6741865658D001FAC75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BC41D6761865658D001FAC75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BC41D67A1865658D001FAC75 /* posimarker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "posimarker-Info.plist"; sourceTree = "<group>"; };
-		BC41D67C1865658D001FAC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BC41D67E1865658D001FAC75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BC41D6801865658D001FAC75 /* posimarker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "posimarker-Prefix.pch"; sourceTree = "<group>"; };
-		BC41D6811865658D001FAC75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BC41D6821865658D001FAC75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC41D6851865658D001FAC75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC41D6871865658D001FAC75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC41D6881865658D001FAC75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BC41D68A1865658D001FAC75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BC41D6901865658D001FAC75 /* posimarkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = posimarkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC41D6911865658D001FAC75 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		BC41D6991865658D001FAC75 /* posimarkerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "posimarkerTests-Info.plist"; sourceTree = "<group>"; };
-		BC41D69B1865658D001FAC75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BC41D69D1865658D001FAC75 /* posimarkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = posimarkerTests.m; sourceTree = "<group>"; };
-		BC41ECC71865787F001FAC75 /* SimpleKML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKML.h; sourceTree = "<group>"; };
-		BC41ECC81865787F001FAC75 /* SimpleKML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKML.m; sourceTree = "<group>"; };
-		BC41ECC91865787F001FAC75 /* SimpleKML_UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKML_UIImage.h; sourceTree = "<group>"; };
-		BC41ECCA1865787F001FAC75 /* SimpleKML_UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKML_UIImage.m; sourceTree = "<group>"; };
-		BC41ECCB1865787F001FAC75 /* SimpleKMLBalloonStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLBalloonStyle.h; sourceTree = "<group>"; };
-		BC41ECCC1865787F001FAC75 /* SimpleKMLBalloonStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLBalloonStyle.m; sourceTree = "<group>"; };
-		BC41ECCD1865787F001FAC75 /* SimpleKMLColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLColorStyle.h; sourceTree = "<group>"; };
-		BC41ECCE1865787F001FAC75 /* SimpleKMLColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLColorStyle.m; sourceTree = "<group>"; };
-		BC41ECCF1865787F001FAC75 /* SimpleKMLContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLContainer.h; sourceTree = "<group>"; };
-		BC41ECD01865787F001FAC75 /* SimpleKMLContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLContainer.m; sourceTree = "<group>"; };
-		BC41ECD11865787F001FAC75 /* SimpleKMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLDocument.h; sourceTree = "<group>"; };
-		BC41ECD21865787F001FAC75 /* SimpleKMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLDocument.m; sourceTree = "<group>"; };
-		BC41ECD31865787F001FAC75 /* SimpleKMLFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLFeature.h; sourceTree = "<group>"; };
-		BC41ECD41865787F001FAC75 /* SimpleKMLFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLFeature.m; sourceTree = "<group>"; };
-		BC41ECD51865787F001FAC75 /* SimpleKMLFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLFolder.h; sourceTree = "<group>"; };
-		BC41ECD61865787F001FAC75 /* SimpleKMLFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLFolder.m; sourceTree = "<group>"; };
-		BC41ECD71865787F001FAC75 /* SimpleKMLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLGeometry.h; sourceTree = "<group>"; };
-		BC41ECD81865787F001FAC75 /* SimpleKMLGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLGeometry.m; sourceTree = "<group>"; };
-		BC41ECD91865787F001FAC75 /* SimpleKMLGroundOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLGroundOverlay.h; sourceTree = "<group>"; };
-		BC41ECDA1865787F001FAC75 /* SimpleKMLGroundOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLGroundOverlay.m; sourceTree = "<group>"; };
-		BC41ECDB1865787F001FAC75 /* SimpleKMLIconStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLIconStyle.h; sourceTree = "<group>"; };
-		BC41ECDC1865787F001FAC75 /* SimpleKMLIconStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLIconStyle.m; sourceTree = "<group>"; };
-		BC41ECDD1865787F001FAC75 /* SimpleKMLLinearRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLLinearRing.h; sourceTree = "<group>"; };
-		BC41ECDE1865787F001FAC75 /* SimpleKMLLinearRing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLLinearRing.m; sourceTree = "<group>"; };
-		BC41ECDF1865787F001FAC75 /* SimpleKMLLineString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLLineString.h; sourceTree = "<group>"; };
-		BC41ECE01865787F001FAC75 /* SimpleKMLLineString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLLineString.m; sourceTree = "<group>"; };
-		BC41ECE11865787F001FAC75 /* SimpleKMLLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLLineStyle.h; sourceTree = "<group>"; };
-		BC41ECE21865787F001FAC75 /* SimpleKMLLineStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLLineStyle.m; sourceTree = "<group>"; };
-		BC41ECE31865787F001FAC75 /* SimpleKMLMultiGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLMultiGeometry.h; sourceTree = "<group>"; };
-		BC41ECE41865787F001FAC75 /* SimpleKMLMultiGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLMultiGeometry.m; sourceTree = "<group>"; };
-		BC41ECE51865787F001FAC75 /* SimpleKMLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLObject.h; sourceTree = "<group>"; };
-		BC41ECE61865787F001FAC75 /* SimpleKMLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLObject.m; sourceTree = "<group>"; };
-		BC41ECE71865787F001FAC75 /* SimpleKMLOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLOverlay.h; sourceTree = "<group>"; };
-		BC41ECE81865787F001FAC75 /* SimpleKMLOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLOverlay.m; sourceTree = "<group>"; };
-		BC41ECE91865787F001FAC75 /* SimpleKMLPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPlacemark.h; sourceTree = "<group>"; };
-		BC41ECEA1865787F001FAC75 /* SimpleKMLPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPlacemark.m; sourceTree = "<group>"; };
-		BC41ECEB1865787F001FAC75 /* SimpleKMLPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPoint.h; sourceTree = "<group>"; };
-		BC41ECEC1865787F001FAC75 /* SimpleKMLPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPoint.m; sourceTree = "<group>"; };
-		BC41ECED1865787F001FAC75 /* SimpleKMLPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPolygon.h; sourceTree = "<group>"; };
-		BC41ECEE1865787F001FAC75 /* SimpleKMLPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPolygon.m; sourceTree = "<group>"; };
-		BC41ECEF1865787F001FAC75 /* SimpleKMLPolyStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPolyStyle.h; sourceTree = "<group>"; };
-		BC41ECF01865787F001FAC75 /* SimpleKMLPolyStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPolyStyle.m; sourceTree = "<group>"; };
-		BC41ECF11865787F001FAC75 /* SimpleKMLStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLStyle.h; sourceTree = "<group>"; };
-		BC41ECF21865787F001FAC75 /* SimpleKMLStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLStyle.m; sourceTree = "<group>"; };
-		BC41ECF31865787F001FAC75 /* SimpleKMLStyleSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLStyleSelector.h; sourceTree = "<group>"; };
-		BC41ECF41865787F001FAC75 /* SimpleKMLStyleSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLStyleSelector.m; sourceTree = "<group>"; };
-		BC41ECF51865787F001FAC75 /* SimpleKMLSubStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleKMLSubStyle.h; sourceTree = "<group>"; };
-		BC41ECF61865787F001FAC75 /* SimpleKMLSubStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLSubStyle.m; sourceTree = "<group>"; };
-		BC41ED11186578C0001FAC75 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		BC41ED12186578C0001FAC75 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		BC41ED13186578C0001FAC75 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		BC41ED14186578C0001FAC75 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		BC41ED15186578C0001FAC75 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		BC41ED16186578C0001FAC75 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		BC41ED17186578C0001FAC75 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		BC41ED18186578C0001FAC75 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		BC41ED1E186578C8001FAC75 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
-		BC41ED1F186578C8001FAC75 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInZipInfo.m; sourceTree = "<group>"; };
-		BC41ED20186578C8001FAC75 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
-		BC41ED21186578C8001FAC75 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipException.m; sourceTree = "<group>"; };
-		BC41ED22186578C9001FAC75 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
-		BC41ED23186578C9001FAC75 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipFile.m; sourceTree = "<group>"; };
-		BC41ED24186578C9001FAC75 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
-		BC41ED25186578C9001FAC75 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipReadStream.m; sourceTree = "<group>"; };
-		BC41ED26186578C9001FAC75 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
-		BC41ED27186578C9001FAC75 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipWriteStream.m; sourceTree = "<group>"; };
-		BC41ED2F18657929001FAC75 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
-		BC41ED3018657929001FAC75 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
-		BC41ED3118657929001FAC75 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
-		BC41ED3218657929001FAC75 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
-		BC41ED3318657929001FAC75 /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
-		BC41ED3418657929001FAC75 /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
-		BC41ED3518657929001FAC75 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
-		BC41ED3618657929001FAC75 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
-		BC41ED3718657929001FAC75 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
-		BC41ED3818657929001FAC75 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
-		BC41ED3918657929001FAC75 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
-		BC41ED3A18657929001FAC75 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
-		BC41ED3B18657929001FAC75 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
-		BC41ED3C18657929001FAC75 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
-		BC41ED3D18657929001FAC75 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
-		BC41ED3E18657929001FAC75 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
-		BC41ED3F18657929001FAC75 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
-		BC41ED4018657929001FAC75 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
-		BC41ED4118657929001FAC75 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
-		BC41ED4218657929001FAC75 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
-		BC41ED4318657929001FAC75 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
-		BC41ED4418657929001FAC75 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
-		BC41ED4518657929001FAC75 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
-		BC41ED4618657929001FAC75 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
-		BC41ED4818657929001FAC75 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
-		BC41ED4918657929001FAC75 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
-		BC41ED4A18657929001FAC75 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
 		BC41ED5818657A22001FAC75 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BC41ED5A18657A2B001FAC75 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BC41ED5C18657A35001FAC75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -203,48 +83,121 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BC41D66C1865658D001FAC75 /* Frameworks */ = {
+		5236AC6118659F89008DA096 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC41ED5F18657C83001FAC75 /* libxml2.dylib in Frameworks */,
-				BC41ED5D18657A35001FAC75 /* CoreLocation.framework in Frameworks */,
-				BC41ED5918657A22001FAC75 /* libz.dylib in Frameworks */,
-				BC41D6751865658D001FAC75 /* CoreGraphics.framework in Frameworks */,
-				BC41ED5B18657A2B001FAC75 /* MapKit.framework in Frameworks */,
-				BC41D6771865658D001FAC75 /* UIKit.framework in Frameworks */,
-				BC41D6731865658D001FAC75 /* Foundation.framework in Frameworks */,
+				52624F1B186860B1001F1E29 /* MapKit.framework in Frameworks */,
+				52652AC71865B31000C55F7A /* CoreLocation.framework in Frameworks */,
+				52652AC51865B2FE00C55F7A /* Cocoa.framework in Frameworks */,
+				1D676AAE9B2642DA8410B9D3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC41D68D1865658D001FAC75 /* Frameworks */ = {
+		5236ACCE1865A05F008DA096 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC41D6921865658D001FAC75 /* XCTest.framework in Frameworks */,
-				BC41D6941865658D001FAC75 /* UIKit.framework in Frameworks */,
-				BC41D6931865658D001FAC75 /* Foundation.framework in Frameworks */,
+				52652AC81865B31900C55F7A /* CoreLocation.framework in Frameworks */,
+				5236ACD31865A05F008DA096 /* CoreGraphics.framework in Frameworks */,
+				5236ACD41865A05F008DA096 /* UIKit.framework in Frameworks */,
+				5236ACD21865A05F008DA096 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5236AC6718659F89008DA096 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5236AC6818659F89008DA096 /* AppKit.framework */,
+				5236AC6918659F89008DA096 /* CoreData.framework */,
+				5236AC6A18659F89008DA096 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5236AC6B18659F89008DA096 /* posimarker:mac */ = {
+			isa = PBXGroup;
+			children = (
+				5236AC7718659F89008DA096 /* POKMLDocument.h */,
+				5236AC7818659F89008DA096 /* POKMLDocument.m */,
+				5236AC7A18659F89008DA096 /* POKMLDocument.xib */,
+				5236AC7D18659F89008DA096 /* MainMenu.xib */,
+				5236AC8018659F89008DA096 /* Images.xcassets */,
+				5236AC6C18659F89008DA096 /* Supporting Files */,
+			);
+			path = "posimarker:mac";
+			sourceTree = "<group>";
+		};
+		5236AC6C18659F89008DA096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5236AC6D18659F89008DA096 /* posimarker:mac-Info.plist */,
+				5236AC6E18659F89008DA096 /* InfoPlist.strings */,
+				5236AC7118659F89008DA096 /* main.m */,
+				5236AC7318659F89008DA096 /* posimarker:mac-Prefix.pch */,
+				5236AC7418659F89008DA096 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5236ACD51865A05F008DA096 /* posimarker:ios */ = {
+			isa = PBXGroup;
+			children = (
+				5236ACDE1865A05F008DA096 /* POAppDelegate.h */,
+				5236ACDF1865A05F008DA096 /* POAppDelegate.m */,
+				5236ACE11865A05F008DA096 /* Main.storyboard */,
+				5236ACE41865A05F008DA096 /* POViewController.h */,
+				5236ACE51865A05F008DA096 /* POViewController.m */,
+				5236ACE71865A05F008DA096 /* Images.xcassets */,
+				5236ACD61865A05F008DA096 /* Supporting Files */,
+			);
+			path = "posimarker:ios";
+			sourceTree = "<group>";
+		};
+		5236ACD61865A05F008DA096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5236ACD71865A05F008DA096 /* posimarker:ios-Info.plist */,
+				5236ACD81865A05F008DA096 /* InfoPlist.strings */,
+				5236ACDB1865A05F008DA096 /* main.m */,
+				5236ACDD1865A05F008DA096 /* posimarker:ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52652AC31865AEEA00C55F7A /* KMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				52652ABF1865AEE600C55F7A /* KMLElement.h */,
+				52652AC01865AEE600C55F7A /* KMLElement.m */,
+				52652AC91865C26300C55F7A /* KMLContainer.h */,
+				52652ACA1865C26300C55F7A /* KMLContainer.m */,
+				52CF743F186709B4000AF68E /* KMLMacros.h */,
+				52624F1918684A00001F1E29 /* KMLd.h */,
+			);
+			name = KMLParser;
+			sourceTree = "<group>";
+		};
 		BC41D6661865658C001FAC75 = {
 			isa = PBXGroup;
 			children = (
-				BC41D6781865658D001FAC75 /* posimarker */,
-				BC41D6971865658D001FAC75 /* posimarkerTests */,
+				52652AC31865AEEA00C55F7A /* KMLParser */,
+				5236AC6B18659F89008DA096 /* posimarker:mac */,
+				5236ACD51865A05F008DA096 /* posimarker:ios */,
 				BC41D6711865658D001FAC75 /* Frameworks */,
 				BC41D6701865658D001FAC75 /* Products */,
+				AF215E75693B498EB0177B04 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		BC41D6701865658D001FAC75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC41D66F1865658D001FAC75 /* posimarker.app */,
-				BC41D6901865658D001FAC75 /* posimarkerTests.xctest */,
+				5236AC6418659F89008DA096 /* posimarker:mac.app */,
+				5236ACD11865A05F008DA096 /* posimarker:ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +205,9 @@
 		BC41D6711865658D001FAC75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52624F1A186860B1001F1E29 /* MapKit.framework */,
+				52652AC61865B31000C55F7A /* CoreLocation.framework */,
+				52652AC41865B2FE00C55F7A /* Cocoa.framework */,
 				BC41ED5E18657C82001FAC75 /* libxml2.dylib */,
 				BC41ED5C18657A35001FAC75 /* CoreLocation.framework */,
 				BC41ED5A18657A2B001FAC75 /* MapKit.framework */,
@@ -260,247 +216,51 @@
 				BC41D6741865658D001FAC75 /* CoreGraphics.framework */,
 				BC41D6761865658D001FAC75 /* UIKit.framework */,
 				BC41D6911865658D001FAC75 /* XCTest.framework */,
+				5236AC6518659F89008DA096 /* Cocoa.framework */,
+				5236AC6718659F89008DA096 /* Other Frameworks */,
+				08BBC58F85B942A19CDE103A /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC41D6781865658D001FAC75 /* posimarker */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ECC518657851001FAC75 /* SimpleKML */,
-				BC41D6811865658D001FAC75 /* AppDelegate.h */,
-				BC41D6821865658D001FAC75 /* AppDelegate.m */,
-				BC41D6841865658D001FAC75 /* Main.storyboard */,
-				BC41D6871865658D001FAC75 /* ViewController.h */,
-				BC41D6881865658D001FAC75 /* ViewController.m */,
-				BC41D68A1865658D001FAC75 /* Images.xcassets */,
-				BC41D6791865658D001FAC75 /* Supporting Files */,
-			);
-			path = posimarker;
-			sourceTree = "<group>";
-		};
-		BC41D6791865658D001FAC75 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BC41D67A1865658D001FAC75 /* posimarker-Info.plist */,
-				BC41D67B1865658D001FAC75 /* InfoPlist.strings */,
-				BC41D67E1865658D001FAC75 /* main.m */,
-				BC41D6801865658D001FAC75 /* posimarker-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BC41D6971865658D001FAC75 /* posimarkerTests */ = {
-			isa = PBXGroup;
-			children = (
-				BC41D69D1865658D001FAC75 /* posimarkerTests.m */,
-				BC41D6981865658D001FAC75 /* Supporting Files */,
-			);
-			path = posimarkerTests;
-			sourceTree = "<group>";
-		};
-		BC41D6981865658D001FAC75 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BC41D6991865658D001FAC75 /* posimarkerTests-Info.plist */,
-				BC41D69A1865658D001FAC75 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BC41ECC518657851001FAC75 /* SimpleKML */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ED0F1865789C001FAC75 /* vendor */,
-				BC41ECC61865787F001FAC75 /* source */,
-			);
-			name = SimpleKML;
-			sourceTree = "<group>";
-		};
-		BC41ECC61865787F001FAC75 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ECC71865787F001FAC75 /* SimpleKML.h */,
-				BC41ECC81865787F001FAC75 /* SimpleKML.m */,
-				BC41ECC91865787F001FAC75 /* SimpleKML_UIImage.h */,
-				BC41ECCA1865787F001FAC75 /* SimpleKML_UIImage.m */,
-				BC41ECCB1865787F001FAC75 /* SimpleKMLBalloonStyle.h */,
-				BC41ECCC1865787F001FAC75 /* SimpleKMLBalloonStyle.m */,
-				BC41ECCD1865787F001FAC75 /* SimpleKMLColorStyle.h */,
-				BC41ECCE1865787F001FAC75 /* SimpleKMLColorStyle.m */,
-				BC41ECCF1865787F001FAC75 /* SimpleKMLContainer.h */,
-				BC41ECD01865787F001FAC75 /* SimpleKMLContainer.m */,
-				BC41ECD11865787F001FAC75 /* SimpleKMLDocument.h */,
-				BC41ECD21865787F001FAC75 /* SimpleKMLDocument.m */,
-				BC41ECD31865787F001FAC75 /* SimpleKMLFeature.h */,
-				BC41ECD41865787F001FAC75 /* SimpleKMLFeature.m */,
-				BC41ECD51865787F001FAC75 /* SimpleKMLFolder.h */,
-				BC41ECD61865787F001FAC75 /* SimpleKMLFolder.m */,
-				BC41ECD71865787F001FAC75 /* SimpleKMLGeometry.h */,
-				BC41ECD81865787F001FAC75 /* SimpleKMLGeometry.m */,
-				BC41ECD91865787F001FAC75 /* SimpleKMLGroundOverlay.h */,
-				BC41ECDA1865787F001FAC75 /* SimpleKMLGroundOverlay.m */,
-				BC41ECDB1865787F001FAC75 /* SimpleKMLIconStyle.h */,
-				BC41ECDC1865787F001FAC75 /* SimpleKMLIconStyle.m */,
-				BC41ECDD1865787F001FAC75 /* SimpleKMLLinearRing.h */,
-				BC41ECDE1865787F001FAC75 /* SimpleKMLLinearRing.m */,
-				BC41ECDF1865787F001FAC75 /* SimpleKMLLineString.h */,
-				BC41ECE01865787F001FAC75 /* SimpleKMLLineString.m */,
-				BC41ECE11865787F001FAC75 /* SimpleKMLLineStyle.h */,
-				BC41ECE21865787F001FAC75 /* SimpleKMLLineStyle.m */,
-				BC41ECE31865787F001FAC75 /* SimpleKMLMultiGeometry.h */,
-				BC41ECE41865787F001FAC75 /* SimpleKMLMultiGeometry.m */,
-				BC41ECE51865787F001FAC75 /* SimpleKMLObject.h */,
-				BC41ECE61865787F001FAC75 /* SimpleKMLObject.m */,
-				BC41ECE71865787F001FAC75 /* SimpleKMLOverlay.h */,
-				BC41ECE81865787F001FAC75 /* SimpleKMLOverlay.m */,
-				BC41ECE91865787F001FAC75 /* SimpleKMLPlacemark.h */,
-				BC41ECEA1865787F001FAC75 /* SimpleKMLPlacemark.m */,
-				BC41ECEB1865787F001FAC75 /* SimpleKMLPoint.h */,
-				BC41ECEC1865787F001FAC75 /* SimpleKMLPoint.m */,
-				BC41ECED1865787F001FAC75 /* SimpleKMLPolygon.h */,
-				BC41ECEE1865787F001FAC75 /* SimpleKMLPolygon.m */,
-				BC41ECEF1865787F001FAC75 /* SimpleKMLPolyStyle.h */,
-				BC41ECF01865787F001FAC75 /* SimpleKMLPolyStyle.m */,
-				BC41ECF11865787F001FAC75 /* SimpleKMLStyle.h */,
-				BC41ECF21865787F001FAC75 /* SimpleKMLStyle.m */,
-				BC41ECF31865787F001FAC75 /* SimpleKMLStyleSelector.h */,
-				BC41ECF41865787F001FAC75 /* SimpleKMLStyleSelector.m */,
-				BC41ECF51865787F001FAC75 /* SimpleKMLSubStyle.h */,
-				BC41ECF61865787F001FAC75 /* SimpleKMLSubStyle.m */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		BC41ED0F1865789C001FAC75 /* vendor */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ED2D186578FA001FAC75 /* TouchXML */,
-				BC41ED1D186578C8001FAC75 /* Objective-Zip */,
-				BC41ED10186578C0001FAC75 /* MiniZip */,
-			);
-			name = vendor;
-			sourceTree = "<group>";
-		};
-		BC41ED10186578C0001FAC75 /* MiniZip */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ED11186578C0001FAC75 /* ioapi.c */,
-				BC41ED12186578C0001FAC75 /* ioapi.h */,
-				BC41ED13186578C0001FAC75 /* mztools.c */,
-				BC41ED14186578C0001FAC75 /* mztools.h */,
-				BC41ED15186578C0001FAC75 /* unzip.c */,
-				BC41ED16186578C0001FAC75 /* unzip.h */,
-				BC41ED17186578C0001FAC75 /* zip.c */,
-				BC41ED18186578C0001FAC75 /* zip.h */,
-			);
-			path = MiniZip;
-			sourceTree = "<group>";
-		};
-		BC41ED1D186578C8001FAC75 /* Objective-Zip */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ED1E186578C8001FAC75 /* FileInZipInfo.h */,
-				BC41ED1F186578C8001FAC75 /* FileInZipInfo.m */,
-				BC41ED20186578C8001FAC75 /* ZipException.h */,
-				BC41ED21186578C8001FAC75 /* ZipException.m */,
-				BC41ED22186578C9001FAC75 /* ZipFile.h */,
-				BC41ED23186578C9001FAC75 /* ZipFile.m */,
-				BC41ED24186578C9001FAC75 /* ZipReadStream.h */,
-				BC41ED25186578C9001FAC75 /* ZipReadStream.m */,
-				BC41ED26186578C9001FAC75 /* ZipWriteStream.h */,
-				BC41ED27186578C9001FAC75 /* ZipWriteStream.m */,
-			);
-			path = "Objective-Zip";
-			sourceTree = "<group>";
-		};
-		BC41ED2D186578FA001FAC75 /* TouchXML */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ED2E18657929001FAC75 /* Creation */,
-				BC41ED3318657929001FAC75 /* CXHTMLDocument.h */,
-				BC41ED3418657929001FAC75 /* CXHTMLDocument.m */,
-				BC41ED3518657929001FAC75 /* CXMLDocument_PrivateExtensions.h */,
-				BC41ED3618657929001FAC75 /* CXMLDocument_PrivateExtensions.m */,
-				BC41ED3718657929001FAC75 /* CXMLDocument.h */,
-				BC41ED3818657929001FAC75 /* CXMLDocument.m */,
-				BC41ED3918657929001FAC75 /* CXMLElement_CreationExtensions.h */,
-				BC41ED3A18657929001FAC75 /* CXMLElement_CreationExtensions.m */,
-				BC41ED3B18657929001FAC75 /* CXMLElement_ElementTreeExtensions.h */,
-				BC41ED3C18657929001FAC75 /* CXMLElement_ElementTreeExtensions.m */,
-				BC41ED3D18657929001FAC75 /* CXMLElement.h */,
-				BC41ED3E18657929001FAC75 /* CXMLElement.m */,
-				BC41ED3F18657929001FAC75 /* CXMLNamespaceNode.h */,
-				BC41ED4018657929001FAC75 /* CXMLNamespaceNode.m */,
-				BC41ED4118657929001FAC75 /* CXMLNode_PrivateExtensions.h */,
-				BC41ED4218657929001FAC75 /* CXMLNode_PrivateExtensions.m */,
-				BC41ED4318657929001FAC75 /* CXMLNode_XPathExtensions.h */,
-				BC41ED4418657929001FAC75 /* CXMLNode_XPathExtensions.m */,
-				BC41ED4518657929001FAC75 /* CXMLNode.h */,
-				BC41ED4618657929001FAC75 /* CXMLNode.m */,
-				BC41ED4718657929001FAC75 /* Tidy */,
-				BC41ED4A18657929001FAC75 /* TouchXML.h */,
-			);
-			name = TouchXML;
-			sourceTree = "<group>";
-		};
-		BC41ED2E18657929001FAC75 /* Creation */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ED2F18657929001FAC75 /* CXMLDocument_CreationExtensions.h */,
-				BC41ED3018657929001FAC75 /* CXMLDocument_CreationExtensions.m */,
-				BC41ED3118657929001FAC75 /* CXMLNode_CreationExtensions.h */,
-				BC41ED3218657929001FAC75 /* CXMLNode_CreationExtensions.m */,
-			);
-			path = Creation;
-			sourceTree = "<group>";
-		};
-		BC41ED4718657929001FAC75 /* Tidy */ = {
-			isa = PBXGroup;
-			children = (
-				BC41ED4818657929001FAC75 /* CTidy.h */,
-				BC41ED4918657929001FAC75 /* CTidy.m */,
-			);
-			path = Tidy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC41D66E1865658D001FAC75 /* posimarker */ = {
+		5236AC6318659F89008DA096 /* posimarker:mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC41D6A11865658D001FAC75 /* Build configuration list for PBXNativeTarget "posimarker" */;
+			buildConfigurationList = 5236AC9718659F89008DA096 /* Build configuration list for PBXNativeTarget "posimarker:mac" */;
 			buildPhases = (
-				BC41D66B1865658D001FAC75 /* Sources */,
-				BC41D66C1865658D001FAC75 /* Frameworks */,
-				BC41D66D1865658D001FAC75 /* Resources */,
+				E1176C3A0BC049178E60EFAA /* Check Pods Manifest.lock */,
+				5236AC6018659F89008DA096 /* Sources */,
+				5236AC6118659F89008DA096 /* Frameworks */,
+				5236AC6218659F89008DA096 /* Resources */,
+				FC5F5D3EA8C343559DE528DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = posimarker;
-			productName = posimarker;
-			productReference = BC41D66F1865658D001FAC75 /* posimarker.app */;
+			name = "posimarker:mac";
+			productName = "posimarker:mac";
+			productReference = 5236AC6418659F89008DA096 /* posimarker:mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC41D68F1865658D001FAC75 /* posimarkerTests */ = {
+		5236ACD01865A05F008DA096 /* posimarker:ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC41D6A41865658D001FAC75 /* Build configuration list for PBXNativeTarget "posimarkerTests" */;
+			buildConfigurationList = 5236ACFB1865A060008DA096 /* Build configuration list for PBXNativeTarget "posimarker:ios" */;
 			buildPhases = (
-				BC41D68C1865658D001FAC75 /* Sources */,
-				BC41D68D1865658D001FAC75 /* Frameworks */,
-				BC41D68E1865658D001FAC75 /* Resources */,
+				5236ACCD1865A05F008DA096 /* Sources */,
+				5236ACCE1865A05F008DA096 /* Frameworks */,
+				5236ACCF1865A05F008DA096 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BC41D6961865658D001FAC75 /* PBXTargetDependency */,
 			);
-			name = posimarkerTests;
-			productName = posimarkerTests;
-			productReference = BC41D6901865658D001FAC75 /* posimarkerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "posimarker:ios";
+			productName = "posimarker:ios";
+			productReference = 5236ACD11865A05F008DA096 /* posimarker:ios.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -511,15 +271,8 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = posi;
 				TargetAttributes = {
-					BC41D66E1865658D001FAC75 = {
-						SystemCapabilities = {
-							com.apple.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					BC41D68F1865658D001FAC75 = {
-						TestTargetID = BC41D66E1865658D001FAC75;
+					5236AC6318659F89008DA096 = {
+						DevelopmentTeam = MC98392EJC;
 					};
 				};
 			};
@@ -536,136 +289,237 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC41D66E1865658D001FAC75 /* posimarker */,
-				BC41D68F1865658D001FAC75 /* posimarkerTests */,
+				5236AC6318659F89008DA096 /* posimarker:mac */,
+				5236ACD01865A05F008DA096 /* posimarker:ios */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BC41D66D1865658D001FAC75 /* Resources */ = {
+		5236AC6218659F89008DA096 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC41D68B1865658D001FAC75 /* Images.xcassets in Resources */,
-				BC41D67D1865658D001FAC75 /* InfoPlist.strings in Resources */,
-				BC41D6861865658D001FAC75 /* Main.storyboard in Resources */,
+				5236AC7018659F89008DA096 /* InfoPlist.strings in Resources */,
+				5236AC8118659F89008DA096 /* Images.xcassets in Resources */,
+				5236AC7618659F89008DA096 /* Credits.rtf in Resources */,
+				5236AC7C18659F89008DA096 /* POKMLDocument.xib in Resources */,
+				5236AC7F18659F89008DA096 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC41D68E1865658D001FAC75 /* Resources */ = {
+		5236ACCF1865A05F008DA096 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC41D69C1865658D001FAC75 /* InfoPlist.strings in Resources */,
+				5236ACE81865A05F008DA096 /* Images.xcassets in Resources */,
+				5236ACDA1865A05F008DA096 /* InfoPlist.strings in Resources */,
+				5236ACE31865A05F008DA096 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E1176C3A0BC049178E60EFAA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC5F5D3EA8C343559DE528DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		BC41D66B1865658D001FAC75 /* Sources */ = {
+		5236AC6018659F89008DA096 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC41ED4E18657929001FAC75 /* CXMLDocument_PrivateExtensions.m in Sources */,
-				BC41ED4C18657929001FAC75 /* CXMLNode_CreationExtensions.m in Sources */,
-				BC41ED5218657929001FAC75 /* CXMLElement.m in Sources */,
-				BC41ED28186578C9001FAC75 /* FileInZipInfo.m in Sources */,
-				BC41ED2B186578C9001FAC75 /* ZipReadStream.m in Sources */,
-				BC41ED021865787F001FAC75 /* SimpleKMLLinearRing.m in Sources */,
-				BC41ED29186578C9001FAC75 /* ZipException.m in Sources */,
-				BC41ECFB1865787F001FAC75 /* SimpleKMLContainer.m in Sources */,
-				BC41ED0B1865787F001FAC75 /* SimpleKMLPolyStyle.m in Sources */,
-				BC41ED0A1865787F001FAC75 /* SimpleKMLPolygon.m in Sources */,
-				BC41ED001865787F001FAC75 /* SimpleKMLGroundOverlay.m in Sources */,
-				BC41ED2A186578C9001FAC75 /* ZipFile.m in Sources */,
-				BC41ED4D18657929001FAC75 /* CXHTMLDocument.m in Sources */,
-				BC41ECF81865787F001FAC75 /* SimpleKML_UIImage.m in Sources */,
-				BC41ED1B186578C0001FAC75 /* unzip.c in Sources */,
-				BC41ED19186578C0001FAC75 /* ioapi.c in Sources */,
-				BC41ED4B18657929001FAC75 /* CXMLDocument_CreationExtensions.m in Sources */,
-				BC41ECF71865787F001FAC75 /* SimpleKML.m in Sources */,
-				BC41ED0D1865787F001FAC75 /* SimpleKMLStyleSelector.m in Sources */,
-				BC41ECF91865787F001FAC75 /* SimpleKMLBalloonStyle.m in Sources */,
-				BC41ED041865787F001FAC75 /* SimpleKMLLineStyle.m in Sources */,
-				BC41ED5118657929001FAC75 /* CXMLElement_ElementTreeExtensions.m in Sources */,
-				BC41ECFC1865787F001FAC75 /* SimpleKMLDocument.m in Sources */,
-				BC41D6891865658D001FAC75 /* ViewController.m in Sources */,
-				BC41ED0E1865787F001FAC75 /* SimpleKMLSubStyle.m in Sources */,
-				BC41ED071865787F001FAC75 /* SimpleKMLOverlay.m in Sources */,
-				BC41D6831865658D001FAC75 /* AppDelegate.m in Sources */,
-				BC41ED1A186578C0001FAC75 /* mztools.c in Sources */,
-				BC41ED0C1865787F001FAC75 /* SimpleKMLStyle.m in Sources */,
-				BC41ECFE1865787F001FAC75 /* SimpleKMLFolder.m in Sources */,
-				BC41ED5518657929001FAC75 /* CXMLNode_XPathExtensions.m in Sources */,
-				BC41ED1C186578C0001FAC75 /* zip.c in Sources */,
-				BC41ED5718657929001FAC75 /* CTidy.m in Sources */,
-				BC41ED5418657929001FAC75 /* CXMLNode_PrivateExtensions.m in Sources */,
-				BC41ED061865787F001FAC75 /* SimpleKMLObject.m in Sources */,
-				BC41ED011865787F001FAC75 /* SimpleKMLIconStyle.m in Sources */,
-				BC41ECFF1865787F001FAC75 /* SimpleKMLGeometry.m in Sources */,
-				BC41D67F1865658D001FAC75 /* main.m in Sources */,
-				BC41ED051865787F001FAC75 /* SimpleKMLMultiGeometry.m in Sources */,
-				BC41ED091865787F001FAC75 /* SimpleKMLPoint.m in Sources */,
-				BC41ED031865787F001FAC75 /* SimpleKMLLineString.m in Sources */,
-				BC41ED5018657929001FAC75 /* CXMLElement_CreationExtensions.m in Sources */,
-				BC41ECFA1865787F001FAC75 /* SimpleKMLColorStyle.m in Sources */,
-				BC41ED2C186578C9001FAC75 /* ZipWriteStream.m in Sources */,
-				BC41ED5318657929001FAC75 /* CXMLNamespaceNode.m in Sources */,
-				BC41ED4F18657929001FAC75 /* CXMLDocument.m in Sources */,
-				BC41ECFD1865787F001FAC75 /* SimpleKMLFeature.m in Sources */,
-				BC41ED081865787F001FAC75 /* SimpleKMLPlacemark.m in Sources */,
-				BC41ED5618657929001FAC75 /* CXMLNode.m in Sources */,
+				5236AC7218659F89008DA096 /* main.m in Sources */,
+				5236AC7918659F89008DA096 /* POKMLDocument.m in Sources */,
+				52652AC11865AEE600C55F7A /* KMLElement.m in Sources */,
+				52652ACB1865C26300C55F7A /* KMLContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC41D68C1865658D001FAC75 /* Sources */ = {
+		5236ACCD1865A05F008DA096 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC41D69E1865658D001FAC75 /* posimarkerTests.m in Sources */,
+				5236ACDC1865A05F008DA096 /* main.m in Sources */,
+				52652AC21865AEE600C55F7A /* KMLElement.m in Sources */,
+				5236ACE61865A05F008DA096 /* POViewController.m in Sources */,
+				52652ACC1865C26300C55F7A /* KMLContainer.m in Sources */,
+				5236ACE01865A05F008DA096 /* POAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		BC41D6961865658D001FAC75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BC41D66E1865658D001FAC75 /* posimarker */;
-			targetProxy = BC41D6951865658D001FAC75 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		BC41D67B1865658D001FAC75 /* InfoPlist.strings */ = {
+		5236AC6E18659F89008DA096 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC41D67C1865658D001FAC75 /* en */,
+				5236AC6F18659F89008DA096 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		BC41D6841865658D001FAC75 /* Main.storyboard */ = {
+		5236AC7418659F89008DA096 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC41D6851865658D001FAC75 /* Base */,
+				5236AC7518659F89008DA096 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5236AC7A18659F89008DA096 /* POKMLDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5236AC7B18659F89008DA096 /* Base */,
+			);
+			name = POKMLDocument.xib;
+			sourceTree = "<group>";
+		};
+		5236AC7D18659F89008DA096 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5236AC7E18659F89008DA096 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5236ACD81865A05F008DA096 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5236ACD91865A05F008DA096 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5236ACE11865A05F008DA096 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5236ACE21865A05F008DA096 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BC41D69A1865658D001FAC75 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC41D69B1865658D001FAC75 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5236AC9318659F89008DA096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF215E75693B498EB0177B04 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "posimarker:mac/posimarker:mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "posimarker:mac/posimarker:mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5236AC9418659F89008DA096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF215E75693B498EB0177B04 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "posimarker:mac/posimarker:mac-Prefix.pch";
+				INFOPLIST_FILE = "posimarker:mac/posimarker:mac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5236ACFC1865A060008DA096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "posimarker:ios/posimarker:ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "posimarker:ios/posimarker:ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5236ACFD1865A060008DA096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "posimarker:ios/posimarker:ios-Prefix.pch";
+				INFOPLIST_FILE = "posimarker:ios/posimarker:ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		BC41D69F1865658D001FAC75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -748,100 +602,32 @@
 			};
 			name = Release;
 		};
-		BC41D6A21865658D001FAC75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "posimarker/posimarker-Prefix.pch";
-				INFOPLIST_FILE = "posimarker/posimarker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		BC41D6A31865658D001FAC75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "posimarker/posimarker-Prefix.pch";
-				INFOPLIST_FILE = "posimarker/posimarker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		BC41D6A51865658D001FAC75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/posimarker.app/posimarker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "posimarker/posimarker-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "posimarkerTests/posimarkerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		BC41D6A61865658D001FAC75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/posimarker.app/posimarker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "posimarker/posimarker-Prefix.pch";
-				INFOPLIST_FILE = "posimarkerTests/posimarkerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5236AC9718659F89008DA096 /* Build configuration list for PBXNativeTarget "posimarker:mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5236AC9318659F89008DA096 /* Debug */,
+				5236AC9418659F89008DA096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5236ACFB1865A060008DA096 /* Build configuration list for PBXNativeTarget "posimarker:ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5236ACFC1865A060008DA096 /* Debug */,
+				5236ACFD1865A060008DA096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BC41D66A1865658C001FAC75 /* Build configuration list for PBXProject "posimarker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC41D69F1865658D001FAC75 /* Debug */,
 				BC41D6A01865658D001FAC75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC41D6A11865658D001FAC75 /* Build configuration list for PBXNativeTarget "posimarker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC41D6A21865658D001FAC75 /* Debug */,
-				BC41D6A31865658D001FAC75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC41D6A41865658D001FAC75 /* Build configuration list for PBXNativeTarget "posimarkerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC41D6A51865658D001FAC75 /* Debug */,
-				BC41D6A61865658D001FAC75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
