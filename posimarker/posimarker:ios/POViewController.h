@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "POKMLDocument.h"
 
-@interface POViewController : UIViewController
+@interface POViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
+
+@property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) MKMapView *mapView;
+@property(nonatomic, strong) POKMLDocument *KmlDoc;
 
 @end
