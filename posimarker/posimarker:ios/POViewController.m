@@ -8,15 +8,15 @@
 
 #import "POViewController.h"
 #import "KMLd.h"
+#import "POKMLDocument.h"
 
 @interface POViewController (){
-   
+   POKMLDocument *_KmlDoc;
 }
 
 @end
 
 @implementation POViewController
-@synthesize KmlDoc;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,14 +31,14 @@
 {
     [super viewDidLoad];
     
-    //    NSString *fileName = [[NSBundle mainBundle] pathForResource:@"example" ofType:@"kml"];
-    NSString *fileName=[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/example.kml"];
+    NSString *fileName = [[NSBundle mainBundle] pathForResource:@"example" ofType:@"kml"];
+//    NSString *fileName=[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/example.kml"];
     
     NSURL *fileURL = [NSURL fileURLWithPath:fileName];
-    KmlDoc = [[POKMLDocument alloc] initWithFileURL:fileURL];
+    _KmlDoc = [[POKMLDocument alloc] initWithFileURL:fileURL];
     
     if ([[NSFileManager defaultManager] fileExistsAtPath:fileName]) {
-        [KmlDoc openWithCompletionHandler:^(BOOL success) {
+        [_KmlDoc openWithCompletionHandler:^(BOOL success) {
             if(success){
                 NSLog(@"load OK");
                 [self initTableView];
@@ -49,11 +49,11 @@
         }];
     }
     
-    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/3*2)];
-    _mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    _mapView.delegate = self;
-    _mapView.mapType = MKMapTypeStandard;
-    [self.view addSubview:_mapView];
+    self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/3*2)];
+    self.mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.mapView.delegate = self;
+    self.mapView.mapType = MKMapTypeStandard;
+    [self.view addSubview:self.mapView];
     
 }
 
@@ -61,7 +61,7 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    [KmlDoc closeWithCompletionHandler:nil];
+    [_KmlDoc closeWithCompletionHandler:nil];
 }
 
 #pragma mark -
@@ -71,7 +71,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    id item = [KmlDoc.kmlDocument.elements objectAtIndex:indexPath.row];
+    id item = [_KmlDoc.kmlDocument.elements objectAtIndex:indexPath.row];
     if ([item isKindOfClass:[KMLPlacemark class]]) {
         [self displayPlacemark:item];
     }
@@ -92,7 +92,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return KmlDoc.kmlDocument.elements.count;
+    return _KmlDoc.kmlDocument.elements.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -107,17 +107,17 @@
         cell.textLabel.textColor = [UIColor blackColor];
         cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
     }
-    cell.textLabel.text = [[KmlDoc.kmlDocument.elements objectAtIndex:indexPath.row] name];
+    cell.textLabel.text = [[_KmlDoc.kmlDocument.elements objectAtIndex:indexPath.row] name];
 
     return cell;
 }
 
 - (void)initTableView{
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height/3 *2, self.view.bounds.size.width, self.view.bounds.size.height/3)];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    [self.view addSubview:_tableView];
-    [_tableView reloadData];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height/3 *2, self.view.bounds.size.width, self.view.bounds.size.height/3)];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Map maniputation
@@ -127,8 +127,8 @@
     NSArray *overlays = placemark.overlays;
     NSArray *points = placemark.pointAnnotations;
     
-    [_mapView addOverlays:overlays];
-    [_mapView addAnnotations:points];
+    [self.mapView addOverlays:overlays];
+    [self.mapView addAnnotations:points];
     
     
     MKMapRect flyTo = MKMapRectNull;
@@ -149,10 +149,10 @@
         }
     }
     
-    CGFloat insetH = _mapView.frame.size.height * 0.2;
-    CGFloat insetW = _mapView.frame.size.width * 0.2;
+    CGFloat insetH = self.mapView.frame.size.height * 0.2;
+    CGFloat insetW = self.mapView.frame.size.width * 0.2;
     
-    [_mapView setVisibleMapRect:flyTo edgePadding:UIEdgeInsetsMake(insetH, insetW, insetH, insetW)
+    [self.mapView setVisibleMapRect:flyTo edgePadding:UIEdgeInsetsMake(insetH, insetW, insetH, insetW)
                        animated:YES];
 }
 
@@ -179,7 +179,7 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
-    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[_mapView dequeueReusableAnnotationViewWithIdentifier:@"pin"];
+    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:@"pin"];
     if (pinView==nil) pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pin"];
     else pinView.annotation = annotation;
     pinView.canShowCallout = YES;
